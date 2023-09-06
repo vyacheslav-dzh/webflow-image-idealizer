@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+  max-width: 189px;
+}
+.image-input-label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;;
+}
+button, .image-input-label span:not(#img-name) {
+  color: #fff;
+  background: #0073E6;
+  padding: 4px 8px;
+  border: 2px solid #0073E6;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;;
+}
+input {
+  padding: 4px 8px;
+}
+
+#image-input {
+  display: none;
+}
+.wrapper {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#img-name {
+  min-height: 27px;
+  max-width: 100%;
+  word-break: break-all;
+}
